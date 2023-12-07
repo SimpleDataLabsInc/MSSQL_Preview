@@ -1,6 +1,6 @@
 name: MSSQL_Preview
 description: ''
-version: 0.0.1
+version: 0.0.2
 author: scott@prophecy.io
 language: python
 buildSystem: ''
