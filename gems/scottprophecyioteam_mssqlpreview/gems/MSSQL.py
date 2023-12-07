@@ -100,6 +100,9 @@ class MSSQLFormat(DatasetSpec):
                     .addElement(
                         TextBox("Server URL").bindProperty("serverUrl")
                     )
+                    .addElement(
+                        TextBox("Database").bindProperty("dbName")
+                    )
                     #.addElement(
                     #    Checkbox("Is this a Synapse instance?").bindProperty("isSynapse")
                     #)
@@ -178,10 +181,11 @@ class MSSQLFormat(DatasetSpec):
     def targetDialog(self) -> DatasetDialog:
         return DatasetDialog("mssql")
 
-    def validate(self, component: Component) -> list:
-        diagnostics = super(MSSQLFormat, self).validate(component)
+    def validate(self, component: Component, foo) -> list:
+        return []
+        #diagnostics = super(MSSQLFormat, self).validate(component)
 
-        return diagnostics
+        #return diagnostics
 
     def onChange(self, oldState: Component, newState: Component) -> Component:
         return newState

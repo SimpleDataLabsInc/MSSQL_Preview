@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/MSSQLTest",
     "language" : "python",
-    "fabricId" : "332",
+    "fabricId" : "4856",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -63,12 +63,57 @@
     "configurationVersion" : "v1"
   },
   "connections" : [ ],
-  "processes" : { },
+  "processes" : {
+    "zKamGJ8DMoNV7v32JHYa5$$JfBApznn6txfmV-SnVQXb" : {
+      "id" : "zKamGJ8DMoNV7v32JHYa5$$JfBApznn6txfmV-SnVQXb",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "asd",
+        "slug" : "asd",
+        "x" : -1140,
+        "y" : -560,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "MkDd3ycHh0zZXOIIum2xI$$V6MP4AVJGz1PUp16QbJTA",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/asd"
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.zKamGJ8DMoNV7v32JHYa5$$JfBApznn6txfmV-SnVQXb.properties.dataset.schema",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Missing Schema. Please infer schema or provide it manually.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }

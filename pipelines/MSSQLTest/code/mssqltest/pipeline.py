@@ -5,9 +5,10 @@ from prophecy.utils import *
 from mssqltest.config.ConfigStore import *
 from mssqltest.udfs.UDFs import *
 from prophecy.utils import *
+from mssqltest.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    pass
+    df_asd = asd(spark)
 
 def main():
     spark = SparkSession.builder\

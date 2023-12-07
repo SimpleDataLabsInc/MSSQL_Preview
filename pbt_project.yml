@@ -20,11 +20,25 @@ pipelines:
     language: python
     createdAt: '2023-12-06 17:51:04'
     datasets:
-      inputs: []
+      inputs:
+      - datasets/asd
       outputs: []
     subgraphs: []
     dependencies: {}
-datasets: {}
+datasets:
+  datasets/asd:
+    name: asd
+    description: ''
+    author: scott@prophecy.io
+    createdAt: '2023-12-07 17:30:00'
+    mode: batch
+    physicalDatasets:
+      ProphecyInfogainFabric:
+        fabricId: 4856
+        datasetType: Warehouse
+        description: ''
+        author: scott@prophecy.io
+        createdAt: '2023-12-07 17:30:00'
 templates: {}
 jobs: {}
 gemContainer:
